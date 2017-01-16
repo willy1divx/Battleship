@@ -1,0 +1,88 @@
+.radar {
+	height: 600px;
+	width: 1300px;
+	background-color: black;
+	float: center;
+	margin: auto;
+}
+
+img {
+	margin: auto;
+	height: 600px;
+	width: 60%;
+	margin-left: 15%;
+}
+
+.letters {
+	list-style: none;
+	position: absolute;
+	top: 150px;
+	left: 300px;
+}
+
+.down {
+	margin-bottom: 45px;
+	font-size: 40px;
+	color: white;
+	
+}
+
+.number {
+	list-style: none;
+	color: white;
+	display: inline-block;
+	position: absolute;
+	top: 70px;
+	left: 400px;
+
+}
+
+.acr {
+	display: inline-block;
+	color: white;
+	font-size: 40px;
+	margin-right: 85px;
+}
+
+table {
+	position: relative;
+	top: -483px;
+	left: 350px;
+}
+
+td {
+	color: white;
+	background: none;
+	padding-right: 20px;
+}
+
+#miss {
+	height: 80px;
+	width: 90px;
+}
+
+h1 {
+	color: red;
+	position: absolute;
+	top: 120px;
+	right: 140px;
+}
+
+h2 {
+	font-size: 40px;
+	color: red;
+	position: absolute;
+	top: 60px;
+	right: 130px;
+}
+
+h3 {
+	font-size: 40px;
+	color: #004d1a;
+	position: absolute;
+	top: 226px;
+	right: 432px;
+
+}
+
+
