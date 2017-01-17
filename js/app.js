@@ -125,22 +125,20 @@ function increaseCount(count) {
 			number = Math.floor(Math.random() * 16) + 1;
 		if (myArray.indexOf(number) < 0){
 			myArray.push(number);
-		}	
+		} 
 		}
-		
+		console.log(myArray);
 	}
 
 	function checkHit(number){
 		if (myArray.indexOf(number) > -1){
-			image = "img/hit.jpg";
+			image = "img/hit.png";
 			sank += 1;
 		} else {
 		image = "img/miss.jpg";
 		}
 		return image;
-	}
-
-	
+	}	
 });
 
 

@@ -1,6 +1,11 @@
+body {
+	background-repeat: no-repeat;
+	background-size: 1400px 600px;		
+}
+
 .radar {
 	height: 600px;
-	width: 1300px;
+	width: 1000px;
 	background-color: black;
 	float: center;
 	margin: auto;
@@ -9,7 +14,7 @@
 img {
 	margin: auto;
 	height: 600px;
-	width: 60%;
+	width: 65%;
 	margin-left: 15%;
 }
 
@@ -17,7 +22,7 @@ img {
 	list-style: none;
 	position: absolute;
 	top: 150px;
-	left: 300px;
+	left: 380px;
 }
 
 .down {
@@ -33,7 +38,7 @@ img {
 	display: inline-block;
 	position: absolute;
 	top: 70px;
-	left: 400px;
+	left: 450px;
 
 }
 
@@ -46,14 +51,14 @@ img {
 
 table {
 	position: relative;
-	top: -483px;
-	left: 350px;
+	top: -485px;
+	left: 265px;
 }
 
 td {
 	color: white;
 	background: none;
-	padding-right: 20px;
+	padding-right: 1px;
 }
 
 #miss {
@@ -65,15 +70,15 @@ h1 {
 	color: red;
 	position: absolute;
 	top: 120px;
-	right: 140px;
+	right: 250px;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 30px;
 	color: red;
 	position: absolute;
 	top: 60px;
-	right: 130px;
+	right: 250px;
 }
 
 h3 {
