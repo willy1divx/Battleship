@@ -5,6 +5,7 @@
 $(document).ready(function(){
 	var count = 1;
 	var sank = 0;
+	var picture = 0;
 function increaseCount(count) {
 		count = count++;
 		return count;
@@ -126,17 +127,28 @@ function increaseCount(count) {
 		function ifSank(){
 			$('h1').replaceWith("<h1>count: "+count+"</h1>");
 			count = count + 1;
+			if (count > 16){
+				$('h3').replaceWith("<h3 style='color: red;'>YOU LOOSE!!!!!!!!!</h3>");	
+					exit;
+			}
 			 if (sank == 4){
-			 	$('h3').replaceWith("<h3 style='color: red;'>YOU SANK MY BATTLESHIP</h3>");
+			 	if (count  < 16){
+				 	$('h3').replaceWith("<h3 style='color: red;'>YOU SANK MY BATTLESHIP</h3>");
+				 	setTimeout(reset, 5000);
+				 } 	 	
 		 };
 	};
 
 	myArray = [];
 	var number ;
+
 		do { number = Math.floor(Math.random() * 16) + 1; 
 			if (myArray.indexOf(number) < 0){
 				myArray.push(number);
 			}
+			picture = Math.floor(Math.random() * 13) + 1;
+			images = 'img/ship' + picture + '.jpg';
+			$('.body').attr("background", images);
 			console.log(myArray);
 		}
 		while (myArray.length < 4);
@@ -160,7 +172,13 @@ function increaseCount(count) {
 		}
 		return image;
 	}	
+
+	function reset(){
+		location.reload();
+	}
+
+	
 });
 
-
+		
 	
